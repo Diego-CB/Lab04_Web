@@ -1,0 +1,38 @@
+.naranja {
+    margin: auto;
+    margin-top: 220px;
+    width: 2000px;
+    height: 2000px;
+    background: rgb(252, 50, 0);
+    border-radius: 50%;
+    align-items: flex-end;
+}
+
+#top_casco {
+    margin: auto;
+    margin-top: -1800px;
+    width: 1300px;
+    height: 1500px;
+    background: rgb(189, 189, 189);
+    border-radius: 50%;
+    align-items: flex-end;
+}
+
+.rectangule {
+    margin: auto;
+    margin-top: -750px;
+    width: 1500px;
+    height: 700px;
+    background: rgb(252, 50, 0);
+    align-items: flex-end;
+}
+
+#rectangulo_small {
+
+    margin: auto;
+    margin-top: -400px;
+    width: 800px;
+    height: 500px;
+    background: rgb(252, 50, 0);
+    align-items: flex-end;
+}
