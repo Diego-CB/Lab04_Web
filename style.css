@@ -1,7 +1,12 @@
 /* Variables de colores a usar */
 :root {
-    --color_naranja: rgb(252, 50, 0);
-    --color_casco_claro: rgb(189, 189, 189);
+    --color-naranja: rgb(252, 50, 0);
+
+    /* Colores del casco */
+    --color-casco-claro: rgb(189, 189, 189);
+    --color-casco: rgb(161, 161, 161);
+    --color-casco-sombra: rgb(119, 119, 119);
+    --color-casco-black: rgb(94, 93, 93);
 }
 
 * {
@@ -15,7 +20,7 @@ html, body {
     height: 100%;
 }
 
-.align {
+.align{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,18 +28,55 @@ html, body {
 }
 
 #circulo-naranja {
-    width: 2000px;
-    height: 2000px;
-    background: var(--color_naranja);
+    width:  80vh;
+    height: 80vh;
+    background: var(--color-naranja);
     border-radius: 50%;
+    flex-grow: 0;
 }
 
-#top_casco {
+#top-casco {
     position: relative;
     top: -25%;
-    width: 1200px;
-    height: 600px;
-    background: var(--color_casco_claro);
+    width: 55%;  
+    height: 30%;
+
+    background: var(--color-casco);
     border-radius: 1500px 1500px 0 0;
 }
+
+::after, ::before {
+    content: " ";    
+    text-align: center;
+
+    display: block;
+}
+
+#top-casco::before {
+
+    /* Forma */
+    width: 10%;
+    height: 104%;
+    margin-left: 45%;
+    background: var(--color-casco-sombra);
+
+    /* Posicion */
+    position: relative;
+    top: -0.5%;
+}
+
+#top-casco::after {
+
+    /* Forma */
+    width: 6%;
+    height: 104%;
+    margin-left: 47%;
+    background: var(--color-casco);
+
+    /* Posicion */
+    position: relative;
+    top: -105%;
+}
+
+
 
