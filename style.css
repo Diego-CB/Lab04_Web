@@ -32,7 +32,7 @@ html, body {
     height: 80vh;
     background: var(--color-naranja);
     border-radius: 50%;
-    flex-grow: 0;
+    perspective: 700px;
 }
 
 #top-casco {
@@ -170,10 +170,14 @@ html, body {
 
     position: relative;
     top: -2.5%;
+    left: 0.1%;
 
-    border-radius: 15% 15% 0 0;
-
+    border-radius: 10% 10% 0 0;
     background: var(--color-casco);
+
+    perspective: 700px;
+
+    transform: rotateX(5deg);
 }
 
 #visor {
@@ -184,5 +188,47 @@ html, body {
     top: 10%;
     left: 5%;
 
-    border-radius: 30% 30% 0 0;
+    border-radius: 30% 30% 30% 30%;
+}
+
+/* ---- Cachetes ---- */
+
+.cachetes-top {
+    width: 65%;
+    height: 79%;
+
+    position: relative;
+    top: -68%;
+
+    background-color: var(--color-casco);
+}
+
+#cachete-top-left {
+    top: -72%;
+    right: 11%;
+
+    transform: 
+        rotateX(-12deg)
+        rotateY(-45deg)
+    ;
+}
+
+#cachete-top-right {
+    top: -151%;
+    left: 45%;
+    
+    transform: 
+        rotateX(-12deg)
+        rotateY(45deg)
+    ;
+}
+
+#visor-down {
+
+    width: 11%;
+    height: 22.6%;
+
+    position: relative;
+    top: -162%;
+    left: 44%;
 }
