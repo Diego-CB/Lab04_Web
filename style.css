@@ -37,7 +37,7 @@ html, body {
 
 #top-casco {
     position: relative;
-    top: -25%;
+    top: 0%;
     width: 55%;  
     height: 30%;
 
@@ -77,6 +77,103 @@ html, body {
     position: relative;
     top: -105%;
 }
+
+#cara {
+    height: 40%;
+    width: 55%;
+
+    position: relative;
+    top: -4.5%;
+
+    background: var(--color-casco);
+}
+
+#visor {
+    height: 100%;
+    width:  90%;
+
+    position: relative;
+
+    top: 8%;
+    left: 5%;
+
+}
+
+#frente {
+    height: 15%;
+    width:  100%;
+    border-radius: 0 0 50% 50%;
+
+    position: relative;
+
+    top: -95%;
+
+
+    background: var(--color-casco);
+}
+
+#frente::after {
+    height: 100%;
+    width:  100%;
+    border-radius: 50% 50% 50% 50%;
+    
+    position: relative;
+    top: -180%;
+    background: var(--color-casco-claro);
+}
+
+#frente::before {
+    height: 90%;
+    width:  100%;
+    border-radius: 50% 50% 50% 50%;
+    
+    position: relative;
+    top: -70%;
+    background: var(--color-casco-sombra);
+}
+
+#frente-top {
+    height: 5%;
+    width:  55%;
+    border-radius: 50% 50% 50% 50%;
+    
+    position: relative;
+    top: -48%;
+    background: var(--color-casco);
+}
+
+#franja-down {
+    height: 5.6%;
+    width:  5.5%;
+
+    position: relative;
+    top: -53%;
+
+    background: var(--color-casco-sombra);
+}
+
+#franja-down::before {
+    height: 110%;
+    width:  60%;
+    position: relative;
+    left: 20%;
+ 
+    background:var(--color-casco);
+}
+
+#franja-down::after {
+    height: 45%;
+    width:  100%;
+
+    position: relative;
+    top: -10%;
+    left: 0;
+    border-radius: 0 0 50% 50%;
+
+    background:var(--color-casco-sombra);
+}
+
+
 
 
 
