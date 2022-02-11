@@ -4,7 +4,7 @@
 
     /* Colores del casco */
     --color-casco-claro: rgb(189, 189, 189);
-    --color-casco: rgb(161, 161, 161);
+    --color-casco: rgb(155, 155, 155);
     --color-casco-sombra: rgb(119, 119, 119);
     --color-casco-black: rgb(94, 93, 93);
 }
@@ -37,8 +37,8 @@ html, body {
 
 #top-casco {
     position: relative;
-    top: 0%;
-    width: 55%;  
+    top: 3%;
+    width: 53%;  
     height: 30%;
 
     background: var(--color-casco);
@@ -48,7 +48,6 @@ html, body {
 ::after, ::before {
     content: " ";    
     text-align: center;
-
     display: block;
 }
 
@@ -78,12 +77,102 @@ html, body {
     top: -105%;
 }
 
+
+/* Curva Normal */
+#frente-top {
+    height: 11%;
+    width:  51.5%;
+    border-radius: 50% 50% 50% 50%;
+    
+    position: relative;
+    top: -52.4%;
+    background: var(--color-casco);
+}
+
+/* Curva Clara */
+#frente::after {
+    height: 130%;
+    width:  97%;
+    border-radius: 45% 45% 50% 50%;
+    
+    position: relative;
+    top: -201%;
+    left: 2.2%;
+    background: var(--color-casco-claro);
+    
+}
+
+/* Curva Oscura */
+#frente::before {
+    height: 120%;
+    width:  98.5%;
+    border-radius: 50% 50% 50% 50%;
+    
+    position: relative;
+    top: -63%;
+    left: 1.5%;
+    background: var(--color-casco-sombra);
+}
+
+
+/* ---- Franja superior del casco ----*/
+
+/* Parte oscura */
+#franja-down {
+    height: 12%;
+    width:  5.3%;
+
+    position: relative;
+    top: -63.5%;
+
+    background: var(--color-casco-sombra);
+}
+
+/* Parte clara */
+#franja-down::before {
+    height: 114%;
+    width:  60%;
+    position: relative;
+    left: 20%;
+ 
+    background:var(--color-casco);
+}
+
+/* Flecha */
+#franja-down::after {
+    height: 20%;
+    width:  100%;
+
+    position: relative;
+    top: -16%;
+    left: 0;
+    border-radius: 0 0 50% 50%;
+
+    background:var(--color-casco-sombra);
+}
+
+/* Linea de frente */
+#frente {
+    height: 20%;
+    width:  97%;
+    border-radius: 10% 0 50% 50%;
+
+    position: relative;
+    top: -100%;
+    left: 1%;
+
+    background: var(--color-casco);
+}
+
+
 #cara {
     height: 40%;
     width: 55%;
 
     position: relative;
     top: -4.5%;
+
+    border-radius: 5% 5% 0 0;
 
     background: var(--color-casco);
 }
@@ -96,84 +185,4 @@ html, body {
 
     top: 8%;
     left: 5%;
-
 }
-
-#frente {
-    height: 15%;
-    width:  100%;
-    border-radius: 0 0 50% 50%;
-
-    position: relative;
-
-    top: -95%;
-
-
-    background: var(--color-casco);
-}
-
-#frente::after {
-    height: 100%;
-    width:  100%;
-    border-radius: 50% 50% 50% 50%;
-    
-    position: relative;
-    top: -180%;
-    background: var(--color-casco-claro);
-}
-
-#frente::before {
-    height: 90%;
-    width:  100%;
-    border-radius: 50% 50% 50% 50%;
-    
-    position: relative;
-    top: -70%;
-    background: var(--color-casco-sombra);
-}
-
-#frente-top {
-    height: 5%;
-    width:  55%;
-    border-radius: 50% 50% 50% 50%;
-    
-    position: relative;
-    top: -48%;
-    background: var(--color-casco);
-}
-
-#franja-down {
-    height: 5.6%;
-    width:  5.5%;
-
-    position: relative;
-    top: -53%;
-
-    background: var(--color-casco-sombra);
-}
-
-#franja-down::before {
-    height: 110%;
-    width:  60%;
-    position: relative;
-    left: 20%;
- 
-    background:var(--color-casco);
-}
-
-#franja-down::after {
-    height: 45%;
-    width:  100%;
-
-    position: relative;
-    top: -10%;
-    left: 0;
-    border-radius: 0 0 50% 50%;
-
-    background:var(--color-casco-sombra);
-}
-
-
-
-
-
