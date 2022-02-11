@@ -37,7 +37,7 @@ html, body {
 
 #top-casco {
     position: relative;
-    top: 3%;
+    top: 6%;
     width: 53%;  
     height: 30%;
 
@@ -81,22 +81,22 @@ html, body {
 /* Curva Normal */
 #frente-top {
     height: 11%;
-    width:  51.5%;
+    width:  53.5%;
     border-radius: 50% 50% 50% 50%;
     
     position: relative;
-    top: -46.2%;
+    top: -43.8%;
     background: var(--color-casco);
 }
 
 /* Curva Clara */
 #frente::after {
     height: 130%;
-    width:  97%;
+    width:  97.5%;
     border-radius: 45% 45% 50% 50%;
     
     position: relative;
-    top: -201%;
+    top: -230%;
     left: 2.2%;
     background: var(--color-casco-claro);
     
@@ -105,11 +105,11 @@ html, body {
 /* Curva Oscura */
 #frente::before {
     height: 120%;
-    width:  97%;
+    width:  97.5%;
     border-radius: 50% 50% 50% 50%;
     
     position: relative;
-    top: -63%;
+    top: -90%;
     left: 2%;
     background: var(--color-casco-sombra);
 }
@@ -123,7 +123,7 @@ html, body {
     width:  5.3%;
 
     position: relative;
-    top: -63.5%;
+    top: -61.5%;
 
     background: var(--color-casco-sombra);
 }
@@ -140,11 +140,11 @@ html, body {
 
 /* Flecha */
 #franja-down::after {
-    height: 20%;
+    height: 17%;
     width:  100%;
 
     position: relative;
-    top: -16%;
+    top: -25%;
     left: 0;
     border-radius: 0 0 50% 50%;
 
@@ -153,12 +153,12 @@ html, body {
 
 /* Linea de frente */
 #frente {
-    height: 20%;
+    height: 14%;
     width:  97%;
-    border-radius: 10% 0 50% 50%;
+    border-radius: 0 0 50% 50%;
 
     position: relative;
-    top: -85%;
+    top: -78%;
     left: 1%;
 
     background: var(--color-casco);
@@ -169,9 +169,9 @@ html, body {
     width: 55%;
 
     position: relative;
-    top: -4.5%;
+    top: -2.5%;
 
-    border-radius: 5% 5% 0 0;
+    border-radius: 15% 15% 0 0;
 
     background: var(--color-casco);
 }
@@ -181,7 +181,8 @@ html, body {
     width:  90%;
 
     position: relative;
-
     top: 10%;
     left: 5%;
+
+    border-radius: 30% 30% 0 0;
 }
