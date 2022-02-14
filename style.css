@@ -3,10 +3,10 @@
     --color-naranja: rgb(252, 50, 0);
 
     /* Colores del casco */
-    --color-casco-claro: rgb(189, 189, 189);
-    --color-casco: rgb(155, 155, 155);
-    --color-casco-sombra: rgb(119, 119, 119);
-    --color-casco-black: rgb(94, 93, 93);
+    --color-casco-claro: rgb(180, 180, 180);
+    --color-casco: rgb(148, 151, 146);
+    --color-casco-sombra: rgb(125, 125, 125);
+    --color-casco-black: rgb(85, 85, 85);
 }
 
 * {
@@ -194,13 +194,13 @@ html, body {
 
 .cachetes-top {
     width: 64.5%;
-    height: 75%;
+    height: 85%;
 
     position: relative;
     top: -68%;
 
+    perspective: 700px;
     background-color: var(--color-casco);
-    background-color: yellow;
 }
 
 #cachete-left {
@@ -211,60 +211,133 @@ html, body {
         rotateX(-12deg)
         rotateY(-45deg)
     ;
+
+    border-radius: 0 5% 28% 0;
 }
 
 #cachete-right {
-    top: -200.5%;
+    top: -232%;
     left: 46%;
     
     transform: 
         rotateX(-12deg)
         rotateY(45deg)
     ;
+
+    border-radius: 5% 0 0 28%;
 }
 
 #visor-down {
 
-    width: 12.52%;
+    width: 12.6%;
     height: 30%;
 
     position: relative;
-    top: -270%;
-    left: 43.5%;
+    bottom: 337%;
+    left: 43.45%;
 
+    background: black;
 }
 
-.inner-cachetes {
-    height: 50%;
-    width:  50%;
+#cachete-left::after {
+
+    width: 90%;
+    height: 90%;
 
     position: relative;
+    top: -16.5%;
+    right: 5%;
 
-    background-color: blue;
+    transform: 
+        rotateX(25deg)
+        rotateY(10deg)
+    ;
+
+    border-radius: 0 100% 5% 0;
+    background: var(--color-casco-black);
+}
+
+#cachete-left::before {
+    width: 25%;
+    height: 30%;
+    
+    position: relative;
+    top: 67%;
+    left: 72%;
+
+    transform: 
+        rotatez(40deg)
+    ;
+
+    border-radius: 0 30% 0 0;
+
+    background: var(--color-casco);
+}
+
+#cachete-right::after {
+    width: 90%;
+    height: 90%;
+
+    position: relative;
+    top: -18.5%;
+    left: 14%;
+
+    transform: 
+        rotateX(20deg)
+        rotateY(-10deg)
+    ;
+
+    border-radius: 100% 0 0 5%;
+    background: var(--color-casco-black);
+}
+
+#cachete-right::before {
+    width: 25%;
+    height: 30%;
+    
+    position: relative;
+    top: 65.5%;
+    left: 2%;
+
+    transform: 
+        rotatez(-40deg)
+    ;
+
+    border-radius: 30% 0 0 0;
+
+    background: var(--color-casco);
+}
+
+
+.inner-cachetes {
+    height: 37%;
+    width:  0;
+
+	border-top: 11vh solid transparent;
+    position: relative;
+    background-color: transparent;
 }
 
 #inner-cachete-left {
-
-    
-    right: 9%;
-    top: -140%;
-
-
-    transform: 
-        rotateX(0deg)
-        rotateY(15deg)
-    ;
+    bottom: 154.5%;
+    left: 1%;
+	
+    border-left: 6vh solid var(--color-casco-sombra);
 }
 
 #inner-cachete-right {
+    bottom: 311%;
+    left: 84.5%;
+	
+    border-right: 6vh solid var(--color-casco-sombra);
+}
 
-    
-    top: -260%;
-    left: 60%;
+#inner-cachete-left::before {
+    width: 500%;
+    height: 500%;
 
+    position: relative;
+    bottom: 300%;
 
-    transform: 
-        rotateX(0deg)
-        rotateY(15deg)
-    ;
+    background-color: green;
 }
