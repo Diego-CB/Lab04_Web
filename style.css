@@ -233,7 +233,7 @@ html, body {
     height: 30%;
 
     position: relative;
-    bottom: 337%;
+    bottom: 332.8%;
     left: 43.45%;
 
     background: black;
@@ -245,7 +245,7 @@ html, body {
     height: 90%;
 
     position: relative;
-    top: -16.5%;
+    top: -17.5%;
     right: 5%;
 
     transform: 
@@ -262,7 +262,7 @@ html, body {
     height: 30%;
     
     position: relative;
-    top: 67%;
+    top: 66%;
     left: 72%;
 
     transform: 
@@ -310,8 +310,8 @@ html, body {
 
 
 .inner-cachetes {
-    height: 37%;
-    width:  0;
+    height: 35%;
+    width:  1px;
 
 	border-top: 11vh solid transparent;
     position: relative;
@@ -320,7 +320,7 @@ html, body {
 
 #inner-cachete-left {
     bottom: 154.5%;
-    left: 1%;
+    left: 0.8%;
 	
     border-left: 6vh solid var(--color-casco-sombra);
 }
@@ -332,12 +332,34 @@ html, body {
     border-right: 6vh solid var(--color-casco-sombra);
 }
 
-#inner-cachete-left::before {
-    width: 500%;
-    height: 500%;
+#inner-cachete-left::before, #inner-cachete-right::before  {
+    width: 16000%;
+    height: 131.5%;
 
     position: relative;
-    bottom: 300%;
+    background: var(--color-casco-claro);
+}
 
-    background-color: green;
+#inner-cachete-left::before {
+    top: -1%;
+    right: 5500%;
+
+    transform: 
+        rotateY(-55deg)
+        rotateZ(15deg)
+    ;
+
+    border-radius: 0 100% 0 0;
+}
+
+#inner-cachete-right::before {
+    top: -2%;
+    right: 10300%;
+
+    transform: 
+        rotateY(55deg)
+        rotateZ(-15deg)
+    ;
+
+    border-radius: 100% 0 0 0;
 }
