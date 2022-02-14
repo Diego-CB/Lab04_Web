@@ -92,24 +92,24 @@ html, body {
 /* Curva Clara */
 #frente::after {
     height: 130%;
-    width:  97.5%;
+    width:  99%;
     border-radius: 45% 45% 50% 50%;
     
     position: relative;
-    top: -230%;
-    left: 2.2%;
+    top: -211.5%;
+    left: 0.9%;
     background: var(--color-casco-claro);
 }
 
 /* Curva Oscura */
 #frente::before {
     height: 120%;
-    width:  97.5%;
+    width:  99%;
     border-radius: 50% 50% 50% 50%;
     
     position: relative;
-    top: -90%;
-    left: 2%;
+    top: -75%;
+    left: 0.95%;
     background: var(--color-casco-sombra);
 }
 
@@ -157,7 +157,7 @@ html, body {
     border-radius: 0 0 50% 50%;
 
     position: relative;
-    top: -78%;
+    top: -82%;
     left: 2%;
 
     background: var(--color-casco);
@@ -187,23 +187,24 @@ html, body {
     top: 10%;
     left: 5%;
 
-    border-radius: 30% 30% 30% 30%;
+    border-radius: 25% 26% 30% 30%;
 }
 
 /* ---- Cachetes ---- */
 
 .cachetes-top {
-    width: 65%;
-    height: 79%;
+    width: 64.5%;
+    height: 75%;
 
     position: relative;
     top: -68%;
 
     background-color: var(--color-casco);
+    background-color: yellow;
 }
 
-#cachete-top-left {
-    top: -72%;
+#cachete-left {
+    top: -76%;
     right: 11%;
 
     transform: 
@@ -212,9 +213,9 @@ html, body {
     ;
 }
 
-#cachete-top-right {
-    top: -151%;
-    left: 45%;
+#cachete-right {
+    top: -200.5%;
+    left: 46%;
     
     transform: 
         rotateX(-12deg)
@@ -224,10 +225,46 @@ html, body {
 
 #visor-down {
 
-    width: 11%;
+    width: 12.52%;
     height: 30%;
 
     position: relative;
-    top: -169%;
-    left: 44%;
+    top: -270%;
+    left: 43.5%;
+
+}
+
+.inner-cachetes {
+    height: 50%;
+    width:  50%;
+
+    position: relative;
+
+    background-color: blue;
+}
+
+#inner-cachete-left {
+
+    
+    right: 9%;
+    top: -140%;
+
+
+    transform: 
+        rotateX(0deg)
+        rotateY(15deg)
+    ;
+}
+
+#inner-cachete-right {
+
+    
+    top: -260%;
+    left: 60%;
+
+
+    transform: 
+        rotateX(0deg)
+        rotateY(15deg)
+    ;
 }
