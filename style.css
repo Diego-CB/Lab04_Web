@@ -395,7 +395,7 @@ html, body {
 }
 
 #oreja-left {
-    top: 135%;
+    top: 150%;
     right: 6%;
 
     border-bottom-left-radius: 65%;
@@ -425,7 +425,7 @@ html, body {
 }
 
 #oreja-right::before {
-    top: -97%;
+    top: -87%;
     left: -5%;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 5%;
@@ -436,7 +436,7 @@ html, body {
     width: 50%;
 
     position: relative;
-    top: -267.8%;
+    top: -294%;
 
     background: var(--color-casco);
 }
@@ -447,25 +447,25 @@ html, body {
 }
 
 #oreja-right::after {
-    top: -285.5%;
-    right: 14.5%;
+    top: -300%;
+    right: 15.5%;
 
     border-top-right-radius: 100%;
 }
 
 .oreja-flat {
-    width: 150%;
+    width: 140%;
     height: 70%;
 
     position: relative;
     top: -230%;
 
-    background: rgb(150, 150, 150);
+    background: rgb(175, 175, 175);
 }
 
 #oreja-flat-left {
 
-    right: 10%;
+    right: 15%;
     transform: 
         rotateX(60deg)
         rotateZ(5deg);
@@ -475,8 +475,9 @@ html, body {
 }
 
 #oreja-flat-right {
-    top: -245%;
-    right: 25%;
+    width: 135%;
+    top: -235%;
+    right: 13%;
     
     transform: 
         rotateX(60deg)
@@ -484,4 +485,67 @@ html, body {
     ;
     
     border-top-right-radius: 15%;
+}
+
+/* ------------ Adornos de oreja ------------ */
+
+/* Adornos de en medio*/
+.oreja-adorno {
+    width: 50%;
+    height: 125%;
+
+    position: relative;
+    top: 183%;
+
+    background: var(--color-casco-sombra);
+}
+
+#oreja-adorno-left {
+    left: 48%; 
+    transform: rotateZ(-4.5deg);
+}
+
+
+#oreja-adorno-right {
+    left: 1%; 
+    transform: rotateZ(4.6deg);
+}
+
+
+/* Adornos bajos */
+
+#oreja-adorno-left::before, #oreja-adorno-right::before {
+    height: 30%;
+    width: 100%;
+
+    position: relative;
+    top: 118%;
+
+    background: rgb(50, 50, 50);
+}
+
+#oreja-adorno-left::before{
+    right: 3%;
+}
+
+#oreja-adorno-right::before{
+    top: 116%;
+    left: 1.5%;
+}
+
+/* Adornos altos */
+
+#oreja-adorno-left::after, #oreja-adorno-right::after {
+    height: 14%;
+    width: 100%;
+
+    position: relative;
+    top: -60%;
+
+    background: var(--color-casco-black);
+}
+
+a {
+    margin-top: 30px;
+    color: white;
 }
