@@ -1,11 +1,11 @@
 /* Variables de colores a usar */
 :root {
-    --color-naranja: rgb(252, 50, 0);
+    --color-naranja: rgb(212, 42, 0);
 
     /* Colores del casco */
     --color-casco-claro: rgb(180, 180, 180);
-    --color-casco: rgb(148, 151, 146);
-    --color-casco-sombra: rgb(125, 125, 125);
+    --color-casco: rgb(139, 141, 138);
+    --color-casco-sombra: rgb(116, 116, 116);
     --color-casco-black: rgb(85, 85, 85);
 }
 
@@ -81,7 +81,7 @@ html, body {
 /* Curva Normal */
 #frente-top {
     height: 11%;
-    width:  53.5%;
+    width:  53%;
     border-radius: 50% 50% 50% 50%;
     
     position: relative;
@@ -92,24 +92,23 @@ html, body {
 /* Curva Clara */
 #frente::after {
     height: 130%;
-    width:  99%;
-    border-radius: 45% 45% 50% 50%;
+    width:  100%;
+    border-radius: 28% 30% 50% 50%;
     
     position: relative;
     top: -211.5%;
-    left: 0.9%;
+    left: 0%;
     background: var(--color-casco-claro);
 }
 
 /* Curva Oscura */
 #frente::before {
     height: 120%;
-    width:  99%;
+    width:  100%;
     border-radius: 50% 50% 50% 50%;
     
     position: relative;
     top: -75%;
-    left: 0.95%;
     background: var(--color-casco-sombra);
 }
 
@@ -171,7 +170,7 @@ html, body {
     top: -2.5%;
     left: 0.1%;
 
-    border-radius: 10% 10% 0 0;
+    border-radius: 30% 30% 0 0;
     background: var(--color-casco);
 
     perspective: 700px;
@@ -216,7 +215,7 @@ html, body {
 }
 
 #cachete-right {
-    top: -232%;
+    top: -230%;
     left: 46%;
     
     transform: 
@@ -279,7 +278,7 @@ html, body {
     height: 90%;
 
     position: relative;
-    top: -18.5%;
+    top: -19%;
     left: 14%;
 
     transform: 
@@ -296,7 +295,7 @@ html, body {
     height: 30%;
     
     position: relative;
-    top: 65.5%;
+    top: 64.5%;
     left: 2%;
 
     transform: 
@@ -341,7 +340,7 @@ html, body {
 }
 
 #inner-cachete-left::before {
-    top: -1%;
+    top: -3%;
     right: 5500%;
 
     transform: 
@@ -353,7 +352,8 @@ html, body {
 }
 
 #inner-cachete-right::before {
-    top: -2%;
+    height: 132.5%;
+    top: -3%;
     right: 10300%;
 
     transform: 
@@ -362,4 +362,126 @@ html, body {
     ;
 
     border-radius: 100% 0 0 0;
+}
+
+#inner-cachete-left::after, #inner-cachete-right::after {
+    width: 0%;
+    height: 170%;
+
+    position: relative;
+    bottom: 245%;
+
+	border-bottom: 3.8vh solid transparent;
+}
+
+#inner-cachete-left::after{
+    right: 5280%;
+    border-right: 1.5vh solid var(--color-casco-claro);
+}
+
+#inner-cachete-right::after{
+    left: 4280%;
+    border-left: 1.5vh solid var(--color-casco-claro);
+}
+
+/* ---- Orejas ---- */
+
+.orejas {
+    width: 5%;
+    height: 100%;
+    
+    position: relative;
+    background: var(--color-casco);
+}
+
+#oreja-left {
+    top: 135%;
+    right: 6%;
+
+    border-bottom-left-radius: 65%;
+}
+
+#oreja-right {
+    top: 50%;
+    left: 100.2%;
+    
+    border-bottom-right-radius: 65%;
+}
+
+#oreja-right::before, #oreja-left::before {
+    height: 110%;
+    width: 140%;
+
+    position: relative;
+    top: -80%;
+
+    background: var(--color-casco-claro);
+}
+
+#oreja-left::before {
+    right: 30%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 5%;
+}
+
+#oreja-right::before {
+    top: -97%;
+    left: -5%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 5%;
+}
+
+#oreja-right::after, #oreja-left::after {
+    height: 160%;
+    width: 50%;
+
+    position: relative;
+    top: -267.8%;
+
+    background: var(--color-casco);
+}
+
+#oreja-left::after {
+    left: 81.5%;
+    border-top-left-radius: 100%;
+}
+
+#oreja-right::after {
+    top: -285.5%;
+    right: 14.5%;
+
+    border-top-right-radius: 100%;
+}
+
+.oreja-flat {
+    width: 150%;
+    height: 70%;
+
+    position: relative;
+    top: -230%;
+
+    background: rgb(150, 150, 150);
+}
+
+#oreja-flat-left {
+
+    right: 10%;
+    transform: 
+        rotateX(60deg)
+        rotateZ(5deg);
+    ;
+    
+    border-top-left-radius: 15%;
+}
+
+#oreja-flat-right {
+    top: -245%;
+    right: 25%;
+    
+    transform: 
+        rotateX(60deg)
+        rotateZ(-5deg);
+    ;
+    
+    border-top-right-radius: 15%;
 }
